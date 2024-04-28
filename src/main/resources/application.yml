@@ -1,0 +1,23 @@
+logging:
+    level:
+        ROOT: INFO
+        org:
+            springframework:
+                orm:
+                    jpa: DEBUG
+                security: trace
+                transaction: DEBUG
+server:
+    port: 9000
+spring:
+    application:
+        name: user-service-oauth2
+    datasource:
+        driverClassName: com.mysql.cj.jdbc.Driver
+        password: $ha$h!1234
+        url: jdbc:mysql://localhost:3308/user_service
+        username: capuser
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
